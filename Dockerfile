@@ -15,6 +15,7 @@ COPY . .
 
 RUN npm install
 RUN npm run build:dll
+RUN npm run build
 
 # CMD ["/bin/sh", "/OJ_FE/deploy/run.sh"]
 CMD [ "node", "/OJ_FE/build/dev-server.js" ]
